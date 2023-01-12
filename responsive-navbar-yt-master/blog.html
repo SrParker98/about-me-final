@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="blogstyle.css" />
+    <script
+      src="https://kit.fontawesome.com/7e5b2d153f.js"
+      
+    ></script>
+    <script defer src="index.js"></script>
+</head>
+
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="logo nav-link">SN-Web</a>
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="/index.html" class="nav-menu-link nav-link">Inicio</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="/blog.html" class="nav-menu-link nav-link">Blog</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="/sobremi.html" class="nav-menu-link nav-link">Sobre mí</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="/contacto.html" class="nav-menu-link nav-link nav-menu-link_active"
+              >Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+
+    <main class="main-blog-container">
+
+      <h2 class="ultimos-articulos">Últimos artículos</h2>
+
+      <article id="js-entradablog" Name="js-entradablog" class="entrada-blog ">
+        <button id="boton" Name="boton" class="entrada"><h1 class="titulo-entrada">10 Tips infalibles para el posicionamiento SEO</h1></button>
+        <p class="blog-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim unde, voluptatum voluptatibus inventore, harum veniam veritatis facere mollitia quam rem quod doloremque ipsam corrupti necessitatibus amet molestiae quos suscipit iste!</p>
+      </article>
+  
+      <script>
+        /*
+        function ampliarentrada (){
+          const entrada = document.getElementsByTagName("button")
+          const parrafo = document.getElementsByTagName("article")
+          document.querySelectorAll("article").forEach("article").onclick=() => {(classList.toggle("js-entradablog1"))}
+          {
+          document.querySelectorAll("button").forEach("button").onclick=()  => {(classList.toggle("js-entrada"))};
+        }
+        
+        
+        document.querySelector("button").onclick =()=>{
+          ampliarentrada();
+        }}
+    */
+      </script>
+
+       <article id="js-entradablog"  class="entrada-blog ">
+        <button id="boton"  class="entrada"><h1 class="titulo-entrada">10 Tips infalibles para el posicionamiento SEO</h1></button>
+        <p class="blog-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim unde, voluptatum voluptatibus inventore, harum veniam veritatis facere mollitia quam rem quod doloremque ipsam corrupti necessitatibus amet molestiae quos suscipit iste!</p>
+      </article>
+  
+
+      <script>
+        
+        function ampliarentrada (){
+          document.getElementById("js-entradablog").classList.toggle("js-entradablog1");
+          document.getElementById("boton").classList.toggle("js-entrada");
+        }
+        document.getElementById("boton").onclick = function (){
+          ampliarentrada();
+        }
+    
+      </script>
+     
+      
+
+    </main>
+    
+</body>
+</html>
